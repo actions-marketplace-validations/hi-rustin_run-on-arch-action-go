@@ -1,9 +1,9 @@
-name: 'Run on architecture'
+name: 'Run on golang architecture'
 branding:
   icon: 'cpu'
   color: 'green'
 description: 'Run commands in a Linux container with a specific CPU architecture (armv6, armv7, aarch64, s390x, ppc64le)'
-author: 'Umberto Raimondi, Elijah Shaw-Rutschman'
+author: 'Umberto Raimondi, Elijah Shaw-Rutschman, Rustin Liu'
 inputs:
   arch:
     description: 'CPU architecture: armv6, armv7, aarch64, s390x, ppc64le.'
