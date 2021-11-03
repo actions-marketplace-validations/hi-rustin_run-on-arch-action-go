@@ -1,8 +1,8 @@
 {
-  "name": "run-on-arch",
-  "version": "2.0.7",
+  "name": "run-on-arch-go",
+  "version": "2.1.2",
   "description": "Multi architecture support for GitHub Actions",
-  "author": "Umberto Raimondi, Elijah Shaw-Rutschman",
+  "author": "Umberto Raimondi, Elijah Shaw-Rutschman, Rustin Liu",
   "license": "BSD-3-Clause",
   "dependencies": {
     "@actions/core": "^1.2.6",
