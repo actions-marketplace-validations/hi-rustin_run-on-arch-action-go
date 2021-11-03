@@ -1,5 +1,18 @@
 FROM arm64v8/ubuntu:20.04
 
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+		make \
+		gnupg \
+		ca-certificates \
+		gcc \
+		git \
+	; \
+	echo 'deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu focal main' > /etc/apt/sources.list; \
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys F6BC817356A3D45E; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends golang-go;
 
 COPY ./run-on-arch-install.sh /root/run-on-arch-install.sh
 RUN chmod +x /root/run-on-arch-install.sh && /root/run-on-arch-install.sh
